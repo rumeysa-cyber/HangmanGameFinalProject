@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.hangmanfinal.LoginController"
+      alignment="CENTER" spacing="10.0" prefWidth="400.0" prefHeight="300.0">
+
+   <children>
+      <Label text="Hangman Game" />
+      <TextField fx:id="userInput" promptText="Username"/>
+      <PasswordField fx:id="passInput" promptText="Password"/>
+
+      <HBox spacing="10" alignment="CENTER">
+         <Button fx:id="signUpBtn" text="Register" onAction="#onRegisterClick"/>
+         <Button fx:id="playBtn" text="Start Game" onAction="#onPlayClick" disable="true"/>
+      </HBox>
+
+      <ComboBox fx:id="levelSelect" promptText="Choose your level" disable="true"/>
+
+      <Label fx:id="infoLabel" textFill="green"/>
+   </children>
+
+</VBox>

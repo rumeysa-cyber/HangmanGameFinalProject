@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.example.hangmanfinal.GameController">
+
+   <children>
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="10.0">
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+         <children>
+            <Label fx:id="nameLabel" alignment="CENTER" text="Welcome" textFill="#5e0c0c">
+               <font><Font name="Verdana" size="22.0" /></font>
+            </Label>
+
+            <Label fx:id="wordBox" contentDisplay="CENTER" text="_ _ _ _" textFill="#a18319">
+               <font><Font name="Verdana" size="22.0" /></font>
+            </Label>
+
+            <HBox alignment="CENTER" spacing="10.0">
+               <children>
+                  <TextField fx:id="letterInput" promptText="Enter a letter" />
+                  <Button text="Guess the word" onAction="#checkLetter" />
+               </children>
+            </HBox>
+
+            <Label fx:id="triesLabel" text="Wrong : 0" />
+            <Label fx:id="resultLabel" textFill="#066805">
+               <font><Font size="22.0" /></font>
+            </Label>
+
+            <Button fx:id="tryAgainBtn" text="Restart" onAction="#beginGame" />
+            <Canvas fx:id="drawArea" height="300.0" width="300.0" />
+         </children>
+      </VBox>
+
+      <Button fx:id="menuBtn" text="Back" onAction="#goToMenu" layoutX="10.0" layoutY="10.0"/>
+   </children>
+</AnchorPane>
