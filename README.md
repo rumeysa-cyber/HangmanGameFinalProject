@@ -1,28 +1,16 @@
-# HangmanGameFinalProject 
+# Hangman Game 🎮 (JavaFX)
 
-A simple JavaFX-based Hangman game with a login screen, difficulty selection, and result tracking.
+This project is a graphical version of the classic "Hangman" game developed using JavaFX. Players can register with a username and password, select a difficulty level, and guess randomly selected words. Game results (win/lose) are saved in a results.txt file.
 
----
+## ✨ Features
 
-## Features
-
--  **Login/Register System**  
--  **Level Selection** – Easy / Medium / Hard  
--  **Interactive UI** – Built with FXML + Scene Builder  
--  **Results Saved** – All game results recorded in `results.txt`  
--  **Hangman Drawing** – Game over visuals on canvas  
--  **Word List** – Words loaded from external file (`words.txt`)
-
----
-
-## Technologies Used
-
-- Java 17+ 
-- JavaFX 24  
-- FXML (Scene Builder support)  
-- IntelliJ IDEA
-
----
+- JavaFX-based user interface
+- Simple user registration and login (stored temporarily in memory)
+- Difficulty level selection (Easy, Medium, Hard)
+- Random word selection from words.txt
+- Hangman drawing with Canvas
+- Win/Lose result tracking saved in results.txt
+- Option to return to main menu or play again
 
 ##  Project Structure
 HangmanGameFinalProject
@@ -41,18 +29,32 @@ HangmanGameFinalProject
 ├── results.txt
 ├── README.md
 └── .gitignore
-## 📂 How to Run
 
- Make sure Java 17+ and JavaFX 24 SDK are installed
- Clone this repo:
-   
-   git clone https://github.com/rumeysa-cyber/HangmanGameFinalProject.git
-   Open with IntelliJ IDEA
 
-Set VM options:
---module-path /path/to/javafx-sdk-24.0.1/lib --add-modules javafx.controls,javafx.fxml
-Run Main.java
+ ## 📌 Requirements
 
-## Student Information
-- Name: Rumeysa Satılmış
-- Student Number: 23040102017
+- Java 17 or above
+- JavaFX SDK
+- IntelliJ IDEA (recommended with Scene Builder plugin)
+
+## 🚀 How to Run
+
+1. *Open the project* in IntelliJ IDEA or your preferred IDE.
+2. *Set up JavaFX* in your project structure and VM options.
+3. *Run Main.java* to start the application.
+
+## 🧪 How to Play
+
+1. Register with a username and password on the login screen.
+2. Select a difficulty level (Easy, Medium, Hard).
+3. Start the game and guess the word one letter at a time.
+4. After the game ends, see the result and choose to play again or return to the menu.
+
+## 📝 About the Files
+
+- words.txt: A plain text file containing words used in the game (one word per line, lowercase).
+- results.txt: Stores usernames and their game outcomes. Example:
+alice - WON
+bob - LOST
+## 👤 Developer
+- 💻 Rümeysa Satılmış — Student ID: 23040102017
